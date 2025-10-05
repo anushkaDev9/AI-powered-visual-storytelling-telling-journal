@@ -95,8 +95,8 @@ d. Buttons: Regenerate Story | Export | Share<br/>
 4. Vision API outputs passed to Gemini API → generates narrative story.
 5. Combined photo + narrative + mood/theme tags → saved in Firestore.
 6. Dashboard / Storybook View / Insights pages render stored AI storybooks and analytics.
-## Page Flow Diagram
 ## System Diagram
+
 ## Flow of Control Details
 ### STEP 1+2 – Retrieve User Photos [UP]
 Trigger: User clicks “Import Photos” in the New Storybook Page.<br/>
