@@ -16,14 +16,14 @@ a. Headline: “Turn your photos into AI-powered stories”
 b. Subheading: “Import your memories, and let AI craft them into visual
 narratives.”
 c. Background illustration: abstract AI + journaling / pen motif
-2. Feature Highlights Section:
+3. Feature Highlights Section:
 a. Cards or icons explaining:
 i. Import photos from Google Photos or Pinterest
 ii. Vision API extracts objects, scenes, text
 iii. Gemini generates creative story narratives
 iv. Save and revisit AI-generated storybooks
-3. Call-to-Action (CTA) Buttons:
+4. Call-to-Action (CTA) Buttons:
 a. “Sign Up” / “Sign In”
 b. Optional “Learn More”
-4. Optional Visuals / Testimonials:
+5. Optional Visuals / Testimonials:
 a. Sample AI story screenshots or user quotes
