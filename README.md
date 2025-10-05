@@ -101,10 +101,10 @@ d. Buttons: Regenerate Story | Export | Share<br/>
 ### STEP 1+2 – Retrieve User Photos [UP]
 Trigger: User clicks “Import Photos” in the New Storybook Page.<br/>
   Action:<br/>
-    o Authenticate with Social Network X (Google Photos / Pinterest) via OAuth.<br/>
-    o Fetch list of albums/photos via their API.<br/>
-    o Log API call for analytics.<br/>
-    o Output: [UP] → array of user photos (URLs, titles, timestamps).<br/>
+     o Authenticate with Social Network X (Google Photos / Pinterest) via OAuth.<br/>
+     o Fetch list of albums/photos via their API.<br/>
+     o Log API call for analytics.<br/>
+     o Output: [UP] → array of user photos (URLs, titles, timestamps).<br/>
 ### STEP 3a – Filter Already Processed Photos
    • Action:<br/>
     o Query Firestore to check which photo URLs are already processed.<br/>
