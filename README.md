@@ -12,4 +12,4 @@ interactive.
 ### Intro/Public Home Page
 Purpose: Introduce the app to visitors and encourage sign-up/sign-in.
 1. Hero Section: <br/>
-   a) Headline: "Turn your photos into AI-powered stories"
+   a) Headline: *Turn your photos into AI-powered stories*
