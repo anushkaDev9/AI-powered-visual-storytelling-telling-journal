@@ -106,22 +106,22 @@ Trigger: User clicks “Import Photos” in the New Storybook Page.
     o Log API call for analytics.<br/>
     o Output: [UP] → array of user photos (URLs, titles, timestamps).<br/>
 ### STEP 3a – Filter Already Processed Photos
-   • Action:
-    o Query Firestore to check which photo URLs are already processed.
-    o Filter [UP] → [UP'] containing only new photos.
-    o Log analytics
-    o Output: [UP'] → new photos to process.
+   • Action:<br/>
+    o Query Firestore to check which photo URLs are already processed.<br/>
+    o Filter [UP] → [UP'] containing only new photos.<br/>
+    o Log analytics<br/>
+    o Output: [UP'] → new photos to process.<br/>
 ### STEP 3b – Process Photos with AI
-   • Loop over each photo i in [UP']:
-     1. Vision API Call:
-       ▪ Analyze images for objects, scenes, faces, text.
-       ▪ Store output as OutputXXX[i].
-       ▪ Log API call with latency & response
-     2. Gemini API Call:
-       • Generate narrative based on OutputXXX[i] and user context.
-       • Store output as OutputZZZ[i].
-       • Log API calls and processing times
-     3. Store in Hash / Data Structure
+   • Loop over each photo i in [UP']:<br/>
+     1. Vision API Call:<br/>
+       ▪ Analyze images for objects, scenes, faces, text.<br/>
+       ▪ Store output as OutputXXX[i].<br/>
+       ▪ Log API call with latency & response<br/>
+     2. Gemini API Call:<br/>
+       • Generate narrative based on OutputXXX[i] and user context.<br/>
+       • Store output as OutputZZZ[i].<br/>
+       • Log API calls and processing times<br/>
+     3. Store in Hash / Data Structure<br/>
        <code>Hash[photoURL] = {
 "userName": userName,
 "photoURL": photoURL,
