@@ -99,7 +99,7 @@ d. Buttons: Regenerate Story | Export | Share<br/>
 ## System Diagram
 ## Flow of Control Details
 ### STEP 1+2 – Retrieve User Photos [UP]
-Trigger: User clicks “Import Photos” in the New Storybook Page.
+Trigger: User clicks “Import Photos” in the New Storybook Page.<br/>
   • Action:<br/>
     o Authenticate with Social Network X (Google Photos / Pinterest) via OAuth.<br/>
     o Fetch list of albums/photos via their API.<br/>
