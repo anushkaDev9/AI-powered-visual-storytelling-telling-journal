@@ -21,7 +21,7 @@ interactive.
 ![alt text](https://github.com/anushkaDev9/AI-powered-visual-storytelling-telling-journal/blob/main/system%20diagram.png)
 ## Flow of Control Details
 ### STEP 1+2 – Retrieve User Photos [UP]
-Trigger: User clicks “Import Photos” in the New Storybook Page.<br/>
+Trigger: User clicks “Media Library” in the New Storybook Page.<br/>
 Action: <br/>
    o Authenticate with Social Network X (Google Photos / Pinterest) via OAuth.<br/>
    o Fetch list of albums/photos via their API.<br/>
