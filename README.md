@@ -95,3 +95,60 @@ d. Buttons: Regenerate Story | Export | Share<br/>
 4. Vision API outputs passed to Gemini API → generates narrative story.
 5. Combined photo + narrative + mood/theme tags → saved in Firestore.
 6. Dashboard / Storybook View / Insights pages render stored AI storybooks and analytics.
+## Page Flow Diagram
+## System Diagram
+## Flow of Control Details
+# STEP 1+2 – Retrieve User Photos [UP]
+    • Trigger: User clicks “Import Photos” in the New Storybook Page.
+    • Action:
+        o Authenticate with Social Network X (Google Photos / Pinterest) via OAuth.
+        o Fetch list of albums/photos via their API.
+o Log API call for analytics.
+o Output: [UP] → array of user photos (URLs, titles, timestamps).
+STEP 3a – Filter Already Processed Photos
+• Action:
+o Query Firestore to check which photo URLs are already processed.
+o Filter [UP] → [UP'] containing only new photos.
+o Log analytics
+o Output: [UP'] → new photos to process.
+STEP 3b – Process Photos with AI
+• Loop over each photo i in [UP']:
+1. Vision API Call:
+▪ Analyze images for objects, scenes, faces, text.
+▪ Store output as OutputXXX[i].
+▪ Log API call with latency & response
+2. Gemini API Call:
+• Generate narrative based on OutputXXX[i] and user context.
+• Store output as OutputZZZ[i].
+• Log API calls and processing times
+3. Store in Hash / Data Structure
+Hash[photoURL] = {
+"userName": userName,
+"photoURL": photoURL,
+"visionOutput": OutputXXX[i],
+"geminiOutput": OutputZZZ[i]
+}
+STEP 4 – Process with Gemini (Storybook Aggregation)
+• Action:
+o Optionally combine multiple images’ visionOutput + geminiOutput into a single
+storybook narrative.
+o Store as StorageRecordZZZ (AI-generated storybook).
+o Log aggregation analytics
+STEP 5 – Store storybook in Google Database
+• Action:
+o Save individual photo analysis + narrative outputs + aggregated storybook in Firestore.
+o Structure:
+Collection: users/{userID}/storybooks/{storybookID}
+ - photos: [photoURL, visionOutput, geminiOutput,
+mood, theme]
+ - aggregatedNarrative: ZZZ
+ - timestamp
+o Log storage action
+STEP 6 – Retrieve Storybooks for Display
+• Action:
+o Query Firestore for all or relevant storybooks for the user.
+o Display results in Dashboard / Insights / Storybook View.
+o Log retrieval.
+Purpose embedded
+The retrieved storybooks are the final AI-generated narratives reflecting the user’s personal photos
+and journaling experience.
