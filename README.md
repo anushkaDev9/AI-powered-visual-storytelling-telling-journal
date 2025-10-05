@@ -44,3 +44,47 @@ Layout:
    a. Word count trend across stories<br/>
    b. Mood distribution<br/>
    c. Most common themes / objects from Vision API<br/>
+### New Storybook Page
+Purpose: Import photos, process with Vision API + Gemini, generate narrative storybook.<br/>
+Layout:<br/>
+1. Photo Import Section (top):<br/>
+  a. Buttons: “Import from Google Photos” / “Import from Pinterest”<br/>
+  b. Album / photo grid view with selectable photos<br/>
+  c. Progress bar: “Fetching photos…”
+2. Processing Section:
+  a. After selection:
+    i. “Analyze Photos with Vision API”
+    ii. “Generate Story with Gemini API”
+  b. Show real-time progress (e.g., “Processing image 3/12”)
+  c. Log and display processing status for transparency
+3. Storybook Preview (scroll or page-flip view):
+  a. Left panel: photo
+  b. Right panel: AI-generated story / narrative
+  c. Mood & theme icons displayed
+  d. Option to regenerate story or choose style (poetic, travel guide, humorous)
+4. Action Buttons:
+  a. Save Storybook
+  b. Export / Share
+### Insights Page
+Purpose: Analyse and visualize trends from all user storybooks.<br/>
+Components:<br/>
+1. Mood Timeline Graph: shows mood evolution across storybooks<br/>
+2. Word Cloud / Theme Map: highlights most frequent objects, keywords, themes<br/>
+3. Visual Trends: collage of top objects/colors detected via Vision API<br/>
+4. Entry Patterns: e.g., "Most stories created on weekends"<br/>
+5. AI Recommendations: tips based on user’s narrative patterns (“Try a travel story style next
+time”)<br/>
+### Sign-In / Sign-Up Page
+Purpose: Authenticate user and enable photo access from Social Network X.<br/>
+Layout:<br/>
+1. OAuth buttons: "Sign in with Google" / "Sign in with Pinterest"<br/>
+2. Optional minimal email/password login<br/>
+3. Side illustration: pen merging with digital brain<br/>
+### Storybook Display/ Read Mode
+Purpose: Read previously generated AI storybooks.<br/>
+Layout:<br/>
+1. Page-flip view or scrollable panel:<br/>
+a. Image on left<br/>
+b. Gemini-generated narrative on right<br/>
+c. Mood & theme icons<br/>
+d. Buttons: Regenerate Story | Export | Share<br/>
