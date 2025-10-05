@@ -99,18 +99,26 @@ d. Buttons: Regenerate Story | Export | Share<br/>
 ## System Diagram
 ## Flow of Control Details
 ### STEP 1+2 – Retrieve User Photos [UP]
- • Trigger: User clicks “Import Photos” in the New Storybook Page.<br/>
- • Action:<br/>
-        o Authenticate with Social Network X (Google Photos / Pinterest) via OAuth.<br/>
-        o Fetch list of albums/photos via their API.<br/>
-        o Log API call for analytics.<br/>
-        o Output: [UP] → array of user photos (URLs, titles, timestamps).<br/>
+<ul>
+   <li>Trigger: User clicks “Import Photos” in the New Storybook Page.</li>
+   <li>Action:<br/></li>
+  <ul>
+     <li>Authenticate with Social Network X (Google Photos / Pinterest) via OAuth.</li>
+      <li>Fetch list of albums/photos via their API.</li>
+      <li>Log API call for analytics.</li>
+      <li>Output: [UP] → array of user photos (URLs, titles, timestamps).</li>
+  </ul>
+</ul>    
 ### STEP 3a – Filter Already Processed Photos
- • Action:<br/>
-         o Query Firestore to check which photo URLs are already processed.<br/>
-         o Filter [UP] → [UP'] containing only new photos.<br/>
-         o Log analytics<br/>
-         o Output: [UP'] → new photos to process.<br/>
+<ul>
+   <li>Action:</li>
+   <ul>
+      <li>Query Firestore to check which photo URLs are already processed.</li>
+       <li>Filter [UP] → [UP'] containing only new photos.</li>
+       <li>Log analytics</li>
+       <li>Output: [UP'] → new photos to process.</li>
+   </ul>
+</ul>
 ### STEP 3b – Process Photos with AI
  • Loop over each photo i in [UP']:<br/>
          1. Vision API Call:<br/>
