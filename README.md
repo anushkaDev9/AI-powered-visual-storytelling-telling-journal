@@ -138,9 +138,7 @@ o Log aggregation analytics<br/>
 • Action:<br/>
 o Save individual photo analysis + narrative outputs + aggregated storybook in Firestore.<br/>
 o Structure:<br/>
-<pre>Collection: users/{userID}/storybooks/{storybookID}
- - photos: [photoURL, visionOutput, geminiOutput,
-mood, theme]- aggregatedNarrative: ZZZ- timestamp</pre>
+<pre>Collection: users/{userID}/storybooks/{storybookID}- photos: [photoURL, visionOutput, geminiOutput,mood, theme]- aggregatedNarrative: ZZZ- timestamp</pre>
 o Log storage action
 STEP 6 – Retrieve Storybooks for Display
 • Action:
