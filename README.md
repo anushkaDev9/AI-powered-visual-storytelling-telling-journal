@@ -96,7 +96,7 @@ d. Buttons: Regenerate Story | Export | Share<br/>
 5. Combined photo + narrative + mood/theme tags → saved in Firestore.
 6. Dashboard / Storybook View / Insights pages render stored AI storybooks and analytics.
 ## System Diagram
-[![alt text](system diagram.png)](https://github.com/anushkaDev9/AI-powered-visual-storytelling-telling-journal/blob/main/system%20diagram.png)
+![alt text](https://github.com/anushkaDev9/AI-powered-visual-storytelling-telling-journal/blob/main/system%20diagram.png)
 ## Flow of Control Details
 ### STEP 1+2 – Retrieve User Photos [UP]
 Trigger: User clicks “Import Photos” in the New Storybook Page.<br/>
