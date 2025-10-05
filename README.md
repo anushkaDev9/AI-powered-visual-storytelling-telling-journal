@@ -106,22 +106,22 @@ Action: <br/>
    o Log API call for analytics.v
    o Output: [UP] → array of user photos (URLs, titles, timestamps).<br/>
 ### STEP 3a – Filter Already Processed Photos
-• Action:
-o Query Firestore to check which photo URLs are already processed.
-o Filter [UP] → [UP'] containing only new photos.
-o Log analytics
-o Output: [UP'] → new photos to process.
+• Action:<br/>
+o Query Firestore to check which photo URLs are already processed.<br/>
+o Filter [UP] → [UP'] containing only new photos.<br/>
+o Log analytics<br/>
+o Output: [UP'] → new photos to process.<br/>
 ### STEP 3b – Process Photos with AI
-• Loop over each photo i in [UP']:
-1. Vision API Call:
-▪ Analyze images for objects, scenes, faces, text.
-▪ Store output as OutputXXX[i].
-▪ Log API call with latency & response
-2. Gemini API Call:
-• Generate narrative based on OutputXXX[i] and user context.
-• Store output as OutputZZZ[i].
-• Log API calls and processing times
-3. Store in Hash / Data Structure
+• Loop over each photo i in [UP']:<br/>
+1. Vision API Call:<br/>
+▪ Analyze images for objects, scenes, faces, text.<br/>
+▪ Store output as OutputXXX[i].<br/>
+▪ Log API call with latency & response<br/>
+2. Gemini API Call:<br/>
+• Generate narrative based on OutputXXX[i] and user context.<br/>
+• Store output as OutputZZZ[i].<br/>
+• Log API calls and processing times<br/>
+3. Store in Hash / Data Structure<br/>
    <code>Hash[photoURL] = {
 "userName": userName,
 "photoURL": photoURL,
@@ -129,20 +129,18 @@ o Output: [UP'] → new photos to process.
 "geminiOutput": OutputZZZ[i]
 }</code>
 ### STEP 4 – Process with Gemini (Storybook Aggregation)
-• Action:
-o Optionally combine multiple images’ visionOutput + geminiOutput into a single
-storybook narrative.
-o Store as StorageRecordZZZ (AI-generated storybook).
-o Log aggregation analytics
-STEP 5 – Store storybook in Google Database
-• Action:
-o Save individual photo analysis + narrative outputs + aggregated storybook in Firestore.
-o Structure:
-Collection: users/{userID}/storybooks/{storybookID}
+• Action:<br/>
+o Optionally combine multiple images’ visionOutput + geminiOutput into a single<br/>
+storybook narrative.<br/>
+o Store as StorageRecordZZZ (AI-generated storybook).<br/>
+o Log aggregation analytics<br/>
+### STEP 5 – Store storybook in Google Database
+• Action:<br/>
+o Save individual photo analysis + narrative outputs + aggregated storybook in Firestore.<br/>
+o Structure:<br/>
+<pre>Collection: users/{userID}/storybooks/{storybookID}
  - photos: [photoURL, visionOutput, geminiOutput,
-mood, theme]
- - aggregatedNarrative: ZZZ
- - timestamp
+mood, theme]- aggregatedNarrative: ZZZ- timestamp</pre>
 o Log storage action
 STEP 6 – Retrieve Storybooks for Display
 • Action:
