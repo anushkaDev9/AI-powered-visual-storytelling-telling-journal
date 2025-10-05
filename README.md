@@ -100,22 +100,9 @@ d. Buttons: Regenerate Story | Export | Share<br/>
 ## Flow of Control Details
 ### STEP 1+2 – Retrieve User Photos [UP]
 Trigger: User clicks “Import Photos” in the New Storybook Page.<br/>
-### STEP 3b – Process Photos with AI
-   • Loop over each photo i in [UP']:<br/>
-     1. Vision API Call:<br/>
-       ▪ Analyze images for objects, scenes, faces, text.<br/>
-       ▪ Store output as OutputXXX[i].<br/>
-       ▪ Log API call with latency & response<br/>
-     2. Gemini API Call:<br/>
-       • Generate narrative based on OutputXXX[i] and user context.<br/>
-       • Store output as OutputZZZ[i].<br/>
-       • Log API calls and processing times<br/>
-     3. Store in Hash / Data Structure<br/>
-       <code>Hash[photoURL] = {
-"userName": userName,
-"photoURL": photoURL,
-"visionOutput": OutputXXX[i],
-"geminiOutput": OutputZZZ[i]
-}
-</code>
+Action <br/>
+   o Authenticate with Social Network X (Google Photos / Pinterest) via OAuth.<br/>
+   o Fetch list of albums/photos via their API.<br/>
+   o Log API call for analytics.v
+   o Output: [UP] → array of user photos (URLs, titles, timestamps).<br/>
 
