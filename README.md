@@ -63,4 +63,4 @@ o Log retrieval.<br/>
 ## Purpose embedded
 The retrieved storybooks are the final AI-generated narratives reflecting the user’s personal photos
 and journaling experience.
-
+![alt text](https://github.com/anushkaDev9/AI-powered-visual-storytelling-telling-journal/blob/main/flow-diagram.PNG)
