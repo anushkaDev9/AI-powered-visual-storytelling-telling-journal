@@ -67,7 +67,8 @@ o Log storage action<br/>
 o Query Firestore for all or relevant storybooks for the user.<br/>
 o Display results in Dashboard / Insights / Storybook View.<br/>
 o Log retrieval.<br/>
+![alt text](https://github.com/anushkaDev9/AI-powered-visual-storytelling-telling-journal/blob/main/flow-diagram.PNG)
 ## Purpose embedded
 The retrieved storybooks are the final AI-generated narratives reflecting the user’s personal photos
 and journaling experience.
-![alt text](https://github.com/anushkaDev9/AI-powered-visual-storytelling-telling-journal/blob/main/flow-diagram.PNG)
+
