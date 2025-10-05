@@ -88,3 +88,10 @@ a. Image on left<br/>
 b. Gemini-generated narrative on right<br/>
 c. Mood & theme icons<br/>
 d. Buttons: Regenerate Story | Export | Share<br/>
+## Flow Interaction Notes
+1. User logs in via OAuth → imports photos from Social Network X.
+2. Selected photos are filtered against Firestore to remove already processed images.
+3. Each new photo → processed via Vision API → objects, scenes, faces, text extracted.
+4. Vision API outputs passed to Gemini API → generates narrative story.
+5. Combined photo + narrative + mood/theme tags → saved in Firestore.
+6. Dashboard / Storybook View / Insights pages render stored AI storybooks and analytics.
