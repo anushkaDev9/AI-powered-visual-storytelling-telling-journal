@@ -9,7 +9,14 @@ visuals with AI-driven storytelling. All results are stored securely in Google F
 revisit, share, and personalize their journals, making photo memories more meaningful and
 interactive.
 ## Mock up interfaces
-
+### Homepage 
+![alt text](https://github.com/anushkaDev9/AI-powered-visual-storytelling-telling-journal/blob/main/homepage1.png)
+### Dashboard 
+![alt text](https://github.com/anushkaDev9/AI-powered-visual-storytelling-telling-journal/blob/main/Dashboardfinal.png)
+### MediaLibrary
+![alt text](https://github.com/anushkaDev9/AI-powered-visual-storytelling-telling-journal/blob/main/Media%20library.png)
+### Storybook
+![alt text](https://github.com/anushkaDev9/AI-powered-visual-storytelling-telling-journal/blob/main/storybook.png)
 ## System Diagram
 ![alt text](https://github.com/anushkaDev9/AI-powered-visual-storytelling-telling-journal/blob/main/system%20diagram.png)
 ## Flow of Control Details
