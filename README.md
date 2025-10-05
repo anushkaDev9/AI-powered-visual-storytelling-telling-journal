@@ -17,6 +17,8 @@ interactive.
 ![alt text](https://github.com/anushkaDev9/AI-powered-visual-storytelling-telling-journal/blob/main/Media%20library.png)
 ### Storybook
 ![alt text](https://github.com/anushkaDev9/AI-powered-visual-storytelling-telling-journal/blob/main/storybook.png)
+![alt text](https://github.com/anushkaDev9/AI-powered-visual-storytelling-telling-journal/blob/main/Storybook1.jpeg)
+![alt text](https://github.com/anushkaDev9/AI-powered-visual-storytelling-telling-journal/blob/main/storybook2.jpeg)
 ## System Diagram
 ![alt text](https://github.com/anushkaDev9/AI-powered-visual-storytelling-telling-journal/blob/main/system%20diagram.png)
 ## Flow of Control Details
