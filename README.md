@@ -26,3 +26,21 @@ Purpose: Introduce the app to visitors and encourage sign-up/sign-in.
    b. Optional “Learn More”<br/>
 4. Optional Visuals / Testimonials:<br/>
    a. Sample AI story screenshots or user quotes<br/>
+### Dashboard Page
+Purpose: Overview of user’s AI storybooks and quick access to new entries.
+Layout:
+1. Top Navigation Bar:<br/>
+  a. Logo: “Visionary Journal AI” (top left)<br/>
+  b. Menu: Home | My Storybooks | Insights | Settings | Sign Out<br/>
+2. Intro Section:<br/>
+  a. Welcome message: *Turn your photos into AI-powered stories.*<br/>
+  b. Big central button: “New Storybook” (floating/central)<br/>
+3. Recent Storybooks Panel:<br/>
+  a. Card-style previews of AI-generated storybooks:<br/>
+    i. Thumbnail of first image + short narrative excerpt<br/>
+    ii. Mood tag (Happy / Reflective / Adventurous)<br/>
+    iii. Date of creation<br/>
+4. Quick Stats / Insights Section:<br/>
+   a. Word count trend across stories<br/>
+   b. Mood distribution<br/>
+   c. Most common themes / objects from Vision API<br/>
