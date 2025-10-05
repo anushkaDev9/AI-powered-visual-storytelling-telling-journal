@@ -12,4 +12,17 @@ interactive.
 ### Intro/Public Home Page
 Purpose: Introduce the app to visitors and encourage sign-up/sign-in.
 1. Hero Section: <br/>
-   a) Headline: *Turn your photos into AI-powered stories*
+   a. Headline: *Turn your photos into AI-powered stories*<br/>
+   b. Subheading: *Import your memories, and let AI craft them into visual narratives.*<br/>
+   c. Background illustration: abstract AI + journaling / pen motif<br/>
+2. Feature Highlights Section:<br/>
+   a. Cards or icons explaining:<br/>
+     i. Import photos from Google Photos or Pinterest<br/>
+     ii. Vision API extracts objects, scenes, text<br/>
+     iii. Gemini generates creative story narratives<br/>
+     iv. Save and revisit AI-generated storybooks<br/>
+3. Call-to-Action (CTA) Buttons:<br/>
+   a. “Sign Up” / “Sign In”<br/>
+   b. Optional “Learn More”<br/>
+4. Optional Visuals / Testimonials:<br/>
+   a. Sample AI story screenshots or user quotes<br/>
